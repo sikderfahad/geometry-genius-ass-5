@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: auto 300px;
+    gap: 30px;
+}
+
+.thumb {
+    height: 160px;
+}
+
+.input button {
+    background: #F1F1F1;
+    padding: 6px 15px;
+    padding-right: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 18px;
+    color: #414141;
+    font-weight: 600;
+}
+
+.input input {
+    width: 50px;
+    background: #F1F1F1;
+    border: none;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.input span {
+    margin-left: 10px;
+    color: #414141;
+    font-weight: 600;
+}
+
+.aria-calculation {
+    height: 500px;
+}
+
+
+@media screen and (max-width: 640px) {
+    .main-container {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .thumb {
+        height: auto;
+    }
+
+    .aria-calculation {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+    .main-container {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .aria-calculation {
+        height: 400px;
+    }
+
+}
+
+@media screen and (min-width:2200px) {
+    .input input {
+        width: 100px;
+
+    }
+}

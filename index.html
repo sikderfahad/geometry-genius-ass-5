@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>My work with Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#414141',
+                        dark_80: '#111c',
+                        dark_60: '#1119',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="w-11/12 mx-auto p-4 rounded-lg bg-[#1090d81a] mt-8 flex justify-between items-center">
+        <div class="logo">
+            <p class="text-dark_80 lg:text-5xl font-bold">Interactive</p>
+            <p class="text-dark_60 lg:text-3xl font-medium">Geometry Genius</p>
+        </div>
+        <button type="button"
+            class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Blog</button>
+    </header>
+
+    <!-- Main Section start here -->
+    <main class="main-container mt-12 w-11/12 mx-auto ">
+        <section class="card-container grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-6">
+
+            <div class="cols rounded-lg border border-[#1111111a] p-6 text-center">
+                <div class="thumb">
+                    <img class="w-fit mx-auto" src="./assets/images/triangle.png" alt="">
+                </div>
+                <div class="content my-12">
+                    <h3 class="shape-name text-2xl font-bold text-dark">Triangle</h3>
+                    <h4 class="formula text-dark mt-3">Area (A) =
+                        <span>0.5</span>
+                        ×
+                        <span>b</span>
+                        ×
+                        <span>h</span>
+                    </h4>
+                    <div class="user-input-field mt-6 flex justify-center gap-3">
+                        <div class="input flex items-center">
+                            <button>b</button>
+                            <input type="text">
+                            <span>cm</span>
+                        </div>
+                        <div class="input flex items-center">
+                            <button>h</button>
+                            <input type="text">
+                            <span>cm</span>
+                        </div>
+
+                    </div>
+                </div>
+                <button type="button"
+                    class="w-full font-bold text-xl text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded-lg px-5 py-2.5 text-center mr-2 mb-2">Calculate</button>
+            </div>
+            <div class="cols rounded-lg border border-[#1111111a] p-6 text-center">
+                <div class="thumb">
+                    <img class="w-fit mx-auto" src="./assets/images/rectangle.png" alt="">
+                </div>
+                <div class="content my-12">
+                    <h3 class="shape-name text-2xl font-bold text-dark">Rectangle</h3>
+                    <h4 class="formula text-dark mt-3">Area (A) =
+
+                        <span>w</span>
+                        ×
+                        <span>l</span>
+                    </h4>
+                    <div class="user-input-field mt-6 flex justify-center gap-3">
+                        <div class="input flex items-center">
+                            <button>w</button>
+                            <input type="text">
+                            <span>cm</span>
+                        </div>
+                        <div class="input flex items-center">
+                            <button>l</button>
+                            <input type="text">
+                            <span>cm</span>
+                        </div>
+
+                    </div>
+                </div>
+                <button type="button"
+                    class="w-full font-bold text-xl text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded-lg px-5 py-2.5 text-center mr-2 mb-2">Calculate</button>
+            </div>
+            <div class="cols rounded-lg border border-[#1111111a] p-6 text-center">
+                <div class="thumb">
+                    <img class="w-fit mx-auto" src="./assets/images/parallelogram.png" alt="">
+                </div>
+                <div class="content my-12">
+                    <h3 class="shape-name text-2xl font-bold text-dark">Parallelogram</h3>
+                    <h4 class="formula text-dark mt-3">Area (A) =
+                        <span>b</span>
+                        X
+                        <span>h</span>
+                    </h4>
+                    <div class="user-input-field mt-6 flex justify-center gap-3">
+                        <div class="input flex items-center">
+                            <button>b</button>
+                            <input type="text">
+                            <span>cm</span>
+                        </div>
+                        <div class="input flex items-center">
+                            <button>h</button>
+                            <input type="text">
+                            <span>cm</span>
+                        </div>
+
+                    </div>
+                </div>
+                <button type="button"
+                    class="w-full font-bold text-xl text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded-lg px-5 py-2.5 text-center mr-2 mb-2">Calculate</button>
+            </div>
+            <div class="cols rounded-lg border border-[#1111111a] p-6 text-center">
+                <div class="thumb">
+                    <img class="w-fit mx-auto" src="./assets/images/rhombus.png" alt="">
+                </div>
+                <div class="content my-12">
+                    <h3 class="shape-name text-2xl font-bold text-dark">Rhombus</h3>
+                    <h4 class="formula text-dark mt-3">Area (A) =
+                        <span>0.5</span>
+                        X
+                        <span>d<sub>1</sub></span>
+                        X
+                        <span>d<sub>2</sub></span>
+                    </h4>
+                    <div class="user-input-field mt-6 flex justify-center gap-3">
+                        <div class="input flex items-center">
+                            <button>d<sub>1</sub></button>
+                            <input type="text">
+                            <span>cm</span>
+                        </div>
+                        <div class="input flex items-center">
+                            <button>d<sub>1</sub></button>
+                            <input type="text">
+                            <span>cm</span>
+                        </div>
+
+                    </div>
+                </div>
+                <button type="button"
+                    class="w-full font-bold text-xl text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded-lg px-5 py-2.5 text-center mr-2 mb-2">Calculate</button>
+            </div>
+            <div class="cols rounded-lg border border-[#1111111a] p-6 text-center">
+                <div class="thumb">
+                    <img class="w-fit mx-auto" src="./assets/images/pentagon.png" alt="">
+                </div>
+                <div class="content my-12">
+                    <h3 class="shape-name text-2xl font-bold text-dark">Pentagon</h3>
+                    <h4 class="formula text-dark mt-3">Area (A) =
+                        <span>0.5</span>
+                        X
+                        <span>p</span>
+                        X
+                        <span>b</span>
+                    </h4>
+                    <div class="user-input-field mt-6 flex justify-center gap-3">
+                        <div class="input flex items-center">
+                            <button>p</button>
+                            <input type="text">
+                            <span>cm</span>
+                        </div>
+                        <div class="input flex items-center">
+                            <button>b</button>
+                            <input type="text">
+                            <span>cm</span>
+                        </div>
+
+                    </div>
+                </div>
+                <button type="button"
+                    class="w-full font-bold text-xl text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded-lg px-5 py-2.5 text-center mr-2 mb-2">Calculate</button>
+            </div>
+            <div class="cols rounded-lg border border-[#1111111a] p-6 text-center">
+                <div class="thumb">
+                    <img class="w-fit mx-auto" src="./assets/images/ellipse.png" alt="">
+                </div>
+                <div class="content my-12">
+                    <h3 class="shape-name text-2xl font-bold text-dark">Ellipse</h3>
+                    <h4 class="formula text-dark mt-3">Area (A) =
+                        <span>π</span>
+                        <span>a</span>
+                        <span>b</span>
+
+                    </h4>
+                    <div class="user-input-field mt-6 flex justify-center gap-3">
+                        <div class="input flex items-center">
+                            <button>a</button>
+                            <input type="text">
+                            <span>cm</span>
+                        </div>
+                        <div class="input flex items-center">
+                            <button>b</button>
+                            <input type="text">
+                            <span>cm</span>
+                        </div>
+
+                    </div>
+                </div>
+                <button type="button"
+                    class="w-full font-bold text-xl text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded-lg px-5 py-2.5 text-center mr-2 mb-2">Calculate</button>
+            </div>
+        </section>
+
+        <section class="aria-calculation p-6 rounded-lg border border-[#1111111a] text-center">
+            <h3 class="text-center border-b-2 pb-1 text-xl font-semibold inline">Area Calculation</h3>
+        </section>
+    </main>
+
+
+
+
+
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d30db6726a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+
+</body>
+
+</html>
