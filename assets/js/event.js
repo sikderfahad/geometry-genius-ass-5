@@ -44,16 +44,20 @@ getBtn('ellipse').addEventListener('click', function () {
 function unitChanger() {
     const cmUnitValue = document.querySelector('.change-unit-area')
     const cmUnitName = document.querySelector('.cm-unit')
+    const unitChangerBtn = document.querySelector('.unit-changer-btn')
 
     console.log(cmUnitValue, cmUnitName)
 
     const cmUnitValueFloat = parseFloat(cmUnitValue.innerText)
     const newMeterValue = cmUnitValueFloat / 100;
 
-    cmUnitValue.innerText = newMeterValue
+    cmUnitValue.innerText = newMeterValue.toFixed(2)
     cmUnitName.innerText = 'm'
+    unitChangerBtn.innerText = 'Converted'
 
     cmUnitValue.classList.remove('change-unit-area')
+    cmUnitName.classList.remove('cm-unit')
+    unitChangerBtn.classList.remove('unit-changer-btn')
 
 
     const changerBtn = document.querySelector('.unit-changer-btn')

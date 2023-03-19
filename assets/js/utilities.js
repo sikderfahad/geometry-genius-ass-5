@@ -31,7 +31,10 @@ function CreateLi(shapeNameValue, area) {
         <p><span class="change-unit-area">${area} </span> <span class="cm-unit">cm</span><sup>2</sup></p>
         <button onclick="unitChanger()" type="button"
             class="unit-changer-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:outline-none dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-normal rounded-lg text-xs px-2 py-2 text-center">Convert
-            to m<sup>2</sup></button>
+            to m<sup>2</sup>
+        </button>
+        <button class="btn-close text-red-500 text-xl"><i class="fas fa-times"></i></button>
+
 
     </div>
     `
