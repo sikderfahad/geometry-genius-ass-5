@@ -10,8 +10,12 @@ function InputOperate(elementId) {
     const check = 0.5 * inputInt
 
     if (input.value == '') {
-        return alert('The value shouldn\'t empt')
+        return alert('The value shouldn\'t empty')
     }
+    if (inputInt < 0) {
+        return alert('Nagetive value isn\'t allowed')
+    }
+
     if (isNaN(check)) {
         return alert('Please enter a Integer value')
     }
