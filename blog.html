@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <title>My work with Tailwind</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <title>Blog Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/assets/css/style.css">
@@ -30,7 +30,7 @@
 <body>
 
     <!-- Header -->
-    <header class="w-11/12 mx-auto p-4 rounded-lg bg-[#1090d81a] mt-8 flex justify-between items-center">
+    <header class="w-11/12 mx-auto p-4 rounded-lg shadow-lg bg-[#1090d81a] mt-8 flex justify-between items-center">
         <div class="logo">
             <p class="text-dark_80 lg:text-5xl font-bold">Interactive</p>
             <p class="text-dark_60 lg:text-3xl font-medium">Geometry Genius</p>
@@ -100,12 +100,23 @@
                     <p class="mb-2 text-gray-900 dark:text-gray-400">There are 5 ways to select elements in a DOM using
                         selectors.</p>
                     <div class="p-5">
-                        <ol class="list-decimal">
-                            <li>getElementById()</li>
-                            <li>getElementsByClassName()</li>
-                            <li>getElementsByTagName()</li>
-                            <li>querySelector()</li>
-                            <li>querySelectorAll()</li>
+                        <ol class="list-decimal selectorList">
+
+                            <li>
+                                <kbd class="bg-gray-900 text-white p-1 rounded">getElementById()</kbd>
+                            </li>
+                            <li>
+                                <kbd class="bg-gray-900 text-white p-1 rounded">getElementsByClassName()</kbd>
+                            </li>
+                            <li>
+                                <kbd class="bg-gray-900 text-white p-1 rounded">getElementsByTagName()</kbd>
+                            </li>
+                            <li>
+                                <kbd class="bg-gray-900 text-white p-1 rounded">querySelector()</kbd>
+                            </li>
+                            <li>
+                                <kbd class="bg-gray-900 text-white p-1 rounded">querySelectorAll()</kbd>
+                            </li>
                         </ol>
                     </div>
 
@@ -132,11 +143,17 @@
             </h2>
             <div id="accordion-open-body-3" class="hidden" aria-labelledby="accordion-open-heading-3">
                 <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
-                    <p class="mb-2 text-gray-500 dark:text-gray-400">Document Object Model (DOM) is a programming
-                        interface for web documents. It represents the page so that programs
-                        can change the document structure, style, and content. The DOM represents the document as nodes
-                        and objects; that way,
-                        programming languages can interact with the page.</p>
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">Event Bubbling is the event starts from the deepest
+                        element or target element to its parents, then all its ancestors
+                        which are on the way to bottom to top. At present, all the modern browsers have event bubbling
+                        as the default way of
+                        event flow.
+                        <br>
+
+                        But sometimes it gets annoying however, If you want to stop the event bubbling, you can this
+                        methode
+                        <kbd class="bg-gray-900 text-white p-1 rounded">event.stopPropagation()</kbd>
+                    </p>
 
                 </div>
             </div>
@@ -161,11 +178,15 @@
             </h2>
             <div id="accordion-open-body-4" class="hidden" aria-labelledby="accordion-open-heading-4">
                 <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
-                    <p class="mb-2 text-gray-500 dark:text-gray-400">Document Object Model (DOM) is a programming
-                        interface for web documents. It represents the page so that programs
-                        can change the document structure, style, and content. The DOM represents the document as nodes
-                        and objects; that way,
-                        programming languages can interact with the page.</p>
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">In JavaScript there are higher order methods and
+                        functions that accept a function as an argument. These functions used
+                        as arguments for other functions are called callback functions.
+                        <br>
+                        <br>
+                        The benefit of using a callback function is that you can wait for the result of a previous
+                        function call and then
+                        execute another function call.
+                    </p>
 
                 </div>
             </div>
@@ -184,10 +205,6 @@
     <script src="https://kit.fontawesome.com/d30db6726a.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 
-
-    <script src="./assets/js/utilities.js"></script>
-    <script src="./assets/js/event.js"></script>
-    <!-- <script src="./assets/js/script.js"></script> -->
 
 </body>
 

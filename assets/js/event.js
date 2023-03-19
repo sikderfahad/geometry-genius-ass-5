@@ -68,6 +68,38 @@ function unitChanger() {
 }
 
 
+// Random Color generator and Set
+function randomColor() {
+    let color = [];
+    for (let i = 0; i < 3; i++) {
+        color.push(Math.floor(Math.random() * 256));
+    }
+    return 'rgb(' + color.join(', ') + ')';
+}
+
+function getAllCardForRandomColor(elementId) {
+    getBtn(elementId).addEventListener("mouseenter", function () {
+        getBtn(elementId).style.backgroundColor = randomColor();
+        getBtn(elementId).style.transition = '.5s';
+
+    });
+
+    getBtn(elementId).addEventListener("mouseleave", function () {
+        getBtn(elementId).style.backgroundColor = 'white';
+
+    });
+
+
+
+
+}
+
+getAllCardForRandomColor('card-1')
+getAllCardForRandomColor('card-2')
+getAllCardForRandomColor('card-3')
+getAllCardForRandomColor('card-4')
+getAllCardForRandomColor('card-5')
+getAllCardForRandomColor('card-6')
 
 
 
