@@ -60,8 +60,16 @@ function WithHalfOperation(firstArm, lastArm, shapeName) {
     // check input validation
     const check = 0.5 * firstArm * lastArm
     if (isNaN(check)) {
-        return false
+        return alert('Please enter an integer value')
+
     }
+
+    if (check < 0) {
+        return alert('Negative Value is not allowed')
+
+
+    }
+
 
     if (nameLower === 'triangle' || nameLower === 'rhombus' || nameLower === 'pentagon') {
 
