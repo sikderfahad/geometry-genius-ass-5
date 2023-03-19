@@ -46,9 +46,10 @@ function unitChanger() {
     const cmUnitName = document.querySelector('.cm-unit')
     const unitChangerBtn = document.querySelector('.unit-changer-btn')
 
-    console.log(cmUnitValue, cmUnitName)
+
 
     const cmUnitValueFloat = parseFloat(cmUnitValue.innerText)
+    console.log(typeof cmUnitValueFloat)
     const newMeterValue = cmUnitValueFloat / 100;
 
     cmUnitValue.innerText = newMeterValue.toFixed(2)
@@ -60,8 +61,15 @@ function unitChanger() {
     unitChangerBtn.classList.remove('unit-changer-btn')
 
 
-    const changerBtn = document.querySelector('.unit-changer-btn')
+    let changerBtn = document.querySelector('.unit-changer-btn')
     changerBtn.setAttribute('disabled', true)
-    console.log(typeof cmUnitValueFloat, cmUnitValueFloat)
+
 
 }
+
+
+
+
+
+
+
