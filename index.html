@@ -79,7 +79,7 @@
                     <img class="w-fit mx-auto" src="./assets/images/rectangle.png" alt="">
                 </div>
                 <div class="content my-12">
-                    <h3 class="shape-name text-2xl font-bold text-dark">Rectangle</h3>
+                    <h3 id="rectangle-shape" class="shape-name text-2xl font-bold text-dark">Rectangle</h3>
                     <h4 class="formula text-dark mt-3">Area (A) =
 
                         <span>w</span>
@@ -89,12 +89,12 @@
                     <div class="user-input-field mt-6 flex justify-center gap-3">
                         <div class="input flex items-center">
                             <button>w</button>
-                            <input type="text">
+                            <input id="rectangle-first-value" type="text" required>
                             <span>cm</span>
                         </div>
                         <div class="input flex items-center">
                             <button>l</button>
-                            <input type="text">
+                            <input id="rectangle-last-value" type="text" required>
                             <span>cm</span>
                         </div>
 
@@ -108,7 +108,7 @@
                     <img class="w-fit mx-auto" src="./assets/images/parallelogram.png" alt="">
                 </div>
                 <div class="content my-12">
-                    <h3 class="shape-name text-2xl font-bold text-dark">Parallelogram</h3>
+                    <h3 id="parallelogram-shape" class="shape-name text-2xl font-bold text-dark">Parallelogram</h3>
                     <h4 class="formula text-dark mt-3">Area (A) =
                         <span>b</span>
                         X
@@ -117,12 +117,12 @@
                     <div class="user-input-field mt-6 flex justify-center gap-3">
                         <div class="input flex items-center">
                             <button>b</button>
-                            <input type="text">
+                            <input id="parallelogram-first-value" type="text" required>
                             <span>cm</span>
                         </div>
                         <div class="input flex items-center">
                             <button>h</button>
-                            <input type="text">
+                            <input id="parallelogram-last-value" type="text" required>
                             <span>cm</span>
                         </div>
 
@@ -136,7 +136,7 @@
                     <img class="w-fit mx-auto" src="./assets/images/rhombus.png" alt="">
                 </div>
                 <div class="content my-12">
-                    <h3 class="shape-name text-2xl font-bold text-dark">Rhombus</h3>
+                    <h3 id="rhombus-shape" class="shape-name text-2xl font-bold text-dark">Rhombus</h3>
                     <h4 class="formula text-dark mt-3">Area (A) =
                         <span>0.5</span>
                         X
@@ -147,18 +147,18 @@
                     <div class="user-input-field mt-6 flex justify-center gap-3">
                         <div class="input flex items-center">
                             <button>d<sub>1</sub></button>
-                            <input type="text">
+                            <input id="rhombus-first-value" type="number">
                             <span>cm</span>
                         </div>
                         <div class="input flex items-center">
                             <button>d<sub>1</sub></button>
-                            <input type="text">
+                            <input id="rhombus-last-value" type="number">
                             <span>cm</span>
                         </div>
 
                     </div>
                 </div>
-                <button type="button"
+                <button id="rhombus" type="button"
                     class="w-full font-bold text-xl text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded-lg px-5 py-2.5 text-center mr-2 mb-2">Calculate</button>
             </div>
             <div class="cols rounded-lg border border-[#1111111a] p-6 text-center">
@@ -166,7 +166,7 @@
                     <img class="w-fit mx-auto" src="./assets/images/pentagon.png" alt="">
                 </div>
                 <div class="content my-12">
-                    <h3 class="shape-name text-2xl font-bold text-dark">Pentagon</h3>
+                    <h3 id="pentagon-shape" class="shape-name text-2xl font-bold text-dark">Pentagon</h3>
                     <h4 class="formula text-dark mt-3">Area (A) =
                         <span>0.5</span>
                         X
@@ -177,18 +177,18 @@
                     <div class="user-input-field mt-6 flex justify-center gap-3">
                         <div class="input flex items-center">
                             <button>p</button>
-                            <input type="text">
+                            <input id="pentagon-first-value" type="number">
                             <span>cm</span>
                         </div>
                         <div class="input flex items-center">
                             <button>b</button>
-                            <input type="text">
+                            <input id="pentagon-last-value" type="number">
                             <span>cm</span>
                         </div>
 
                     </div>
                 </div>
-                <button type="button"
+                <button id="pentagon" type="button"
                     class="w-full font-bold text-xl text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded-lg px-5 py-2.5 text-center mr-2 mb-2">Calculate</button>
             </div>
             <div class="cols rounded-lg border border-[#1111111a] p-6 text-center">
@@ -196,7 +196,7 @@
                     <img class="w-fit mx-auto" src="./assets/images/ellipse.png" alt="">
                 </div>
                 <div class="content my-12">
-                    <h3 class="shape-name text-2xl font-bold text-dark">Ellipse</h3>
+                    <h3 id="ellipse-shape" class="shape-name text-2xl font-bold text-dark">Ellipse</h3>
                     <h4 class="formula text-dark mt-3">Area (A) =
                         <span>π</span>
                         <span>a</span>
@@ -206,23 +206,23 @@
                     <div class="user-input-field mt-6 flex justify-center gap-3">
                         <div class="input flex items-center">
                             <button>a</button>
-                            <input type="text">
+                            <input id="ellipse-first-value" type="number">
                             <span>cm</span>
                         </div>
                         <div class="input flex items-center">
                             <button>b</button>
-                            <input type="text">
+                            <input id="ellipse-last-value" type="number">
                             <span>cm</span>
                         </div>
 
                     </div>
                 </div>
-                <button type="button"
+                <button id="ellipse" type="button"
                     class="w-full font-bold text-xl text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded-lg px-5 py-2.5 text-center mr-2 mb-2">Calculate</button>
             </div>
         </section>
 
-        <section class="aria-calculation p-6 rounded-lg border border-[#1111111a] text-center">
+        <section class="sticky top-12 aria-calculation p-6 rounded-lg border border-[#1111111a] text-center">
             <h3 class="text-center border-b-2 pb-1 text-xl font-semibold inline">Area Calculation</h3>
 
             <div id="" class="mt-8">
@@ -240,7 +240,11 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/d30db6726a.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+
+
+    <script src="./assets/js/utilities.js"></script>
+    <script src="./assets/js/event.js"></script>
+    <!-- <script src="./assets/js/script.js"></script> -->
 
 </body>
 

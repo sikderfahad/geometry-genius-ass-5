@@ -20,7 +20,7 @@ function InputOperate(elementId) {
 
 
 // Same catagory formula of Triangle, Rhombus, Pentagon
-function WithoutHalfOperation(firstArm, lastArm, shapeName) {
+function WithHalfOperation(firstArm, lastArm, shapeName) {
     const area = 0.5 * firstArm * lastArm
     if (isNaN(area)) {
         return false
@@ -53,13 +53,35 @@ function WithoutHalfOperation(firstArm, lastArm, shapeName) {
     resultBox.appendChild(li)
 }
 
+
+// 3 shape same operation
+function CalcLikeTiangle(firstElementId, lastElementId, shapeId) {
+    const firstArm = InputOperate(firstElementId)
+    const lastArm = InputOperate(lastElementId)
+    const area = WithHalfOperation(firstArm, lastArm, shapeId)
+}
+
+
+
 // Triangle Calculate Operation
 getBtn('triangle').addEventListener('click', function () {
-    const shapeName = getBtn('triangle-shape')
 
-    const firstArm = InputOperate('triangle-first-value')
-    const lastArm = InputOperate('triangle-last-value')
-    const area = WithoutHalfOperation(firstArm, lastArm, 'triangle-shape')
-
-    console.log(area)
+    CalcLikeTiangle('triangle-first-value', 'triangle-last-value', 'triangle-shape')
 })
+
+
+
+// Rhombus Calculate Operation
+getBtn('rhombus').addEventListener('click', function () {
+
+    CalcLikeTiangle('rhombus-first-value', 'rhombus-last-value', 'rhombus-shape')
+})
+
+
+// pentagon Calculate Operation
+getBtn('pentagon').addEventListener('click', function () {
+
+    CalcLikeTiangle('pentagon-first-value', 'pentagon-last-value', 'pentagon-shape')
+})
+
+
