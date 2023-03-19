@@ -103,5 +103,16 @@ getAllCardForRandomColor('card-6')
 
 
 
+// Close Button Handler
+function ItemClose() {
+    const btnClose = document.querySelectorAll('.btn-close')
+    for (const btn of btnClose) {
 
+        btn.addEventListener('click', function (event) {
+            const parent = event.target.parentNode.parentNode.parentNode
+            parent.style.display = 'none'
 
+        })
+
+    }
+}

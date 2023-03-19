@@ -37,7 +37,7 @@ function CreateLi(shapeNameValue, area) {
             class="unit-changer-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:outline-none dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-normal rounded-lg text-xs px-2 py-2 text-center">Convert
             to m<sup>2</sup>
         </button>
-        <button onclick="ItemClose()" class="btn-close text-red-500 text-xl"><i class="fas fa-times"></i></button>
+        <button onclick="ItemClose()" class="btn-close px-2 py-1 text-red-500 text-xl"><i class="fas fa-times"></i></button>
 
 
     </div>
@@ -57,9 +57,6 @@ function WithHalfOperation(firstArm, lastArm, shapeName) {
     let listLi = document.getElementsByTagName("li"),
         listLength = listLi.length;
 
-    if (listLength === 6) {
-        return false
-    }
 
     // check input validation
     const check = 0.5 * firstArm * lastArm
