@@ -27,16 +27,17 @@ body {
 }
 
 .input input {
-    width: 50px;
+    width: 60px;
     background: #F1F1F1;
     border: none;
     outline: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    font-size: 12px;
 }
 
 .input span {
-    margin-left: 10px;
+    margin-left: 2px;
     color: #414141;
     font-weight: 600;
 }

@@ -48,7 +48,7 @@
                     <img class="w-fit mx-auto" src="./assets/images/triangle.png" alt="">
                 </div>
                 <div class="content my-12">
-                    <h3 class="shape-name text-2xl font-bold text-dark">Triangle</h3>
+                    <h3 id="triangle-shape" class="shape-name text-2xl font-bold text-dark">Triangle</h3>
                     <h4 class="formula text-dark mt-3">Area (A) =
                         <span>0.5</span>
                         ×
@@ -59,18 +59,20 @@
                     <div class="user-input-field mt-6 flex justify-center gap-3">
                         <div class="input flex items-center">
                             <button>b</button>
-                            <input type="text">
+                            <!-- <input id="triangle-first-value" type="number" min="0" step="1" /> -->
+                            <input id="triangle-first-value" type="text" required>
                             <span>cm</span>
                         </div>
                         <div class="input flex items-center">
                             <button>h</button>
-                            <input type="text">
+                            <!-- <input id="triangle-first-value" type="number" min="0" step="1" /> -->
+                            <input id="triangle-last-value" type="text" required>
                             <span>cm</span>
                         </div>
 
                     </div>
                 </div>
-                <button type="button"
+                <button id="triangle" type="button"
                     class="w-full font-bold text-xl text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded-lg px-5 py-2.5 text-center mr-2 mb-2">Calculate</button>
             </div>
             <div class="cols rounded-lg border border-[#1111111a] p-6 text-center">
@@ -99,7 +101,7 @@
 
                     </div>
                 </div>
-                <button type="button"
+                <button id="rectangle" type="button"
                     class="w-full font-bold text-xl text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded-lg px-5 py-2.5 text-center mr-2 mb-2">Calculate</button>
             </div>
             <div class="cols rounded-lg border border-[#1111111a] p-6 text-center">
@@ -127,7 +129,7 @@
 
                     </div>
                 </div>
-                <button type="button"
+                <button id="parallelogram" type="button"
                     class="w-full font-bold text-xl text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded-lg px-5 py-2.5 text-center mr-2 mb-2">Calculate</button>
             </div>
             <div class="cols rounded-lg border border-[#1111111a] p-6 text-center">
@@ -223,17 +225,23 @@
 
         <section class="aria-calculation p-6 rounded-lg border border-[#1111111a] text-center">
             <h3 class="text-center border-b-2 pb-1 text-xl font-semibold inline">Area Calculation</h3>
+
+            <div id="" class="mt-8">
+                <ol type="1" id="result-box">
+
+                </ol>
+            </div>
         </section>
     </main>
 
-
-
+    <br><br><br>
 
 
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/d30db6726a.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 
 </body>
 
