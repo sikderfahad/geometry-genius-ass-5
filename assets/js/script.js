@@ -19,11 +19,27 @@ function InputOperate(elementId) {
 }
 
 
+// Same catagory formula of Triangle, Rhombus, Pentagon
 function WithoutHalfOperation(firstArm, lastArm, shapeName) {
     const area = 0.5 * firstArm * lastArm
+    if (isNaN(area)) {
+        return false
+    }
     const shapeNameValue = getBtn(shapeName).innerText
     let resultBox = getBtn('result-box')
+
+    // Check Result box length
+    let listLi = document.getElementsByTagName("li"),
+        listLength = listLi.length;
+
+    if (listLength === 6) {
+        return false
+    }
+
+
+    // Create Result Item
     let li = document.createElement('li')
+    li.classList.add('shape-item')
     li.innerHTML = `
     <div class="flex justify-between items-center text-sm mt-5">
         <p>${shapeNameValue}</p>
@@ -37,6 +53,7 @@ function WithoutHalfOperation(firstArm, lastArm, shapeName) {
     resultBox.appendChild(li)
 }
 
+// Triangle Calculate Operation
 getBtn('triangle').addEventListener('click', function () {
     const shapeName = getBtn('triangle-shape')
 
